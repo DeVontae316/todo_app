@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Provider } from '../context/Provider';
+import { GlobalContext } from '../AppContext/AppContext';
 import { MdEdit } from 'react-icons/md';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 
@@ -13,7 +14,7 @@ function List() {
         setModal,
         setModalId,
 
-    } = useContext(Provider);
+    } = GlobalContext();
 
     const handleEdit = (id) => {
         setModal(true);

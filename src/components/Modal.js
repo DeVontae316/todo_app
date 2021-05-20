@@ -1,8 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Provider } from '../context/Provider';
+import { GlobalContext } from '../AppContext/AppContext'
 
 function Modal(props) {
-    const { list, setList, modal, setModal, modalId } = useContext(Provider);
+    const { list, setList, modal, setModal, modalId } = GlobalContext();
     const [edit, setEdit] = useState('');
     const position = modal ? "modal-container modal-transition" : "modal-container";
 
