@@ -1,38 +1,135 @@
-.App {
+/* h2{
   text-align: center;
+} */
+h1{
+  color:white;
+}
+.submit-btn{
+  background: rgb(49, 48, 48);
+  border:0px;
+  color:white;
+  width:290px;
+}
+input{
+  width: 290px;
+  height: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.save-btn,
+.cancel-btn{
+  width: 150px;
+  height:30px;
+  border-radius: 5px;
+  border: 0px;
+}
+.save-btn{
+  background: lightgreen;
+  color:white;
+}
+.cancel-btn{
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: rebeccapurple;
+  height: 150px;
+  width:1000px;
+}
+.input-todo-container{
+  display: flex;
+}
+.main-container{
+  width: max-content;
+  margin:auto;
+  
+}
+.todo-wrapper{
+  display: flex;
+  flex-direction: row;
+  width:1000px;
+  align-items: center;
+  justify-content: center;
+  background:lightgrey;
+  border-bottom: 1px solid rgb(58, 54, 54);
+  
+}
+label{
+  display: flex;
+  width:1000px;
+  align-items: center;
+  /*  background: lightgrey; */
+}
+.done-todo-wrapper{
+  display: flex;
+  flex-direction: row;
+  width:1000px;
+  justify-content: center;
+  align-items: center;
+  background:rgb(116, 113, 113);
+  border-bottom: 1px solid black;
+}
+.input-container{
+  display: flex;
+  flex-direction: row;
+  width:1000px;
+ /*  border:1px solid red; */
+  align-items: center;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.edit-mode{
+  background:rgb(105, 104, 104);
+}
+.modal-container{
+  position: absolute;
+  top:-700px;
+  left:30%;
+  transition: 0.7s all;
+  width: 450px;
+  height:250px;
+  background: #dcdcdc;
+  padding:20px;
+}
+.modal-transition{
+  top: 200px;
+  left:30%;
+  
+}
+.modal{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+textarea{
+  width:330px;
+  height:100px;
+  resize: none;
+  border:2px solid black;
+  margin-bottom:10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  margin-left: 23px;
+ /*  border:1px solid blue; */
+}
+.icon-wrapper{
+  display: flex;
+  flex-direction: row;
+  
+  width:max-content;
+  /* border:1px solid orange; */
+}
+.delete-icon{
+  margin-left: 1rem;
+}
+.cross-out{
+  text-decoration: line-through;
+  background: #dcdcdc;
+}
+.not-done{
+  text-decoration: none;
 }
