@@ -46,7 +46,7 @@ function Modal(props) {
                     <div className="btn-container">
                         <button className="save-btn" onClick={handleSave}>Save</button>
                         <button className="cancel-btn" onClick={() => setModal(false)}>Cancel</button>
-                        {/*    {modalId + ' id being edited'} */}
+
 
                     </div>
                 </div>

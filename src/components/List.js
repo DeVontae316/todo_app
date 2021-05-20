@@ -19,8 +19,7 @@ function List() {
     const handleEdit = (id) => {
         setModal(true);
         setModalId(id);
-        console.log("id below:")
-        console.log(id);
+
     }
 
     const handleDelete = (id) => {
@@ -29,22 +28,10 @@ function List() {
     }
 
     const handleClick = (id, e) => {
-        /*  const newList = list.map((todo) => {
-             if (todo.id === id) {
-                 todo.style = "cross-out"
- 
-             }
-             return todo;
-         }); */
-        console.log("value below:");
-        console.log(e.target.value = false);
-
-
         setId(id);
-        /*  setList([...newList]); */
     }
 
-    return console.log(btn) || (
+    return (
         <div >
             {list.length > 0 && list.map((todo, index) => {
                 const style = id === todo.id ? "done-todo-wrapper" : "todo-wrapper";

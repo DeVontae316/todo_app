@@ -133,3 +133,30 @@ p{
 .not-done{
   text-decoration: none;
 }
+
+
+@media(max-width:900px){
+  .input-todo-container{
+    width: 300px;
+    margin-right:200px;
+    
+  }
+  h1{
+    margin-right:200px;
+    
+  }
+  .main-container{
+    width:1000px;
+    border: 10px soliod pink;
+  }
+  .icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-right: 500px;
+    width:max-content;
+    /* border:1px solid orange; */
+  }
+  p{
+    margin-right: 10px;
+  }
+}
