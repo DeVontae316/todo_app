@@ -159,4 +159,19 @@ p{
   p{
     margin-right: 10px;
   }
+  .modal-container{
+    position: absolute;
+    top:-700px;
+    left:15%;
+    transition: 0.7s all;
+    width: 450px;
+    height:250px;
+    background: #dcdcdc;
+    padding:20px;
+  }
+  .modal-transition{
+    top: 200px;
+    left:15%;
+    
+  }
 }

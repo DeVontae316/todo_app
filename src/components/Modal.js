@@ -34,7 +34,7 @@ function Modal(props) {
             document.body.classList.remove("edit-mode");
         }
     }, [modal])
-    return console.log(list) || (
+    return (
 
         <section className={position}>
             {modal ? (
